@@ -1,0 +1,510 @@
+body {
+    padding-top: 56px;
+    /* Adjust for fixed-top navbar height */
+    font-family: Arial, sans-serif;
+    color: #333;
+}
+
+.navbar-brand {
+    color: #333 !important;
+}
+
+.navbar-nav .nav-link {
+    color: #555 !important;
+    font-weight: 500;
+    margin: 0 10px;
+    transition: color 0.3s ease;
+}
+
+.navbar-nav .nav-link:hover,
+.navbar-nav .nav-link.active {
+    color: #000 !important;
+}
+
+.icon-size {
+    width: 20px;
+    height: 20px;
+}
+
+.icon-lg {
+    width: 48px;
+    height: 48px;
+}
+
+.icon-xl {
+    width: 64px;
+    height: 64px;
+}
+
+.icon-md {
+    width: 24px;
+    height: 24px;
+}
+
+.hero-section {
+    margin-top: -56px;
+    /* Overlap with navbar to make carousel full width from top */
+    padding-top: 56px;
+    /* Push content down */
+}
+
+/* Owl Carousel Item Styling */
+.owl-carousel .item {
+    height: 600px;
+    /* Maintain height for consistency */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    /* For caption positioning */
+}
+
+.owl-carousel .item img {
+    height: 100%;
+    object-fit: cover;
+    width: 100%;
+}
+
+.carousel-caption {
+    background: rgba(0, 0, 0, 0.5);
+    padding: 20px;
+    border-radius: 8px;
+    bottom: 20%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 80%;
+    max-width: 800px;
+    color: #fff;
+    /* Ensure text color is white */
+}
+
+.carousel-caption h5 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #fff;
+}
+
+.carousel-caption p {
+    font-size: 1.1rem;
+    color: #eee;
+}
+
+/* Owl Carousel Navigation (Arrows) */
+.owl-theme .owl-nav [class*="owl-"] {
+    color: #fff;
+    font-size: 3rem;
+    margin: 5px;
+    background: rgba(0, 0, 0, 0.5);
+    border-radius: 50%;
+    padding: 0 15px;
+    opacity: 0.8;
+    transition: opacity .2s ease;
+}
+
+.owl-theme .owl-nav [class*="owl-"]:hover {
+    background: rgba(0, 0, 0, 0.7);
+    opacity: 1;
+}
+
+.owl-theme .owl-nav .owl-prev {
+    position: absolute;
+    top: 50%;
+    left: 10px;
+    transform: translateY(-50%);
+}
+
+.owl-theme .owl-nav .owl-next {
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    transform: translateY(-50%);
+}
+
+/* Owl Carousel Dots */
+.owl-theme .owl-dots {
+    position: absolute;
+    bottom: 30px;
+    /* Adjust as needed */
+    width: 100%;
+    text-align: center;
+}
+
+.owl-theme .owl-dots .owl-dot span {
+    width: 12px;
+    height: 12px;
+    margin: 5px 7px;
+    background: #d6d6d6;
+    display: block;
+    -webkit-backface-visibility: visible;
+    transition: opacity .2s ease;
+    border-radius: 30px;
+}
+
+.owl-theme .owl-dots .owl-dot.active span,
+.owl-theme .owl-dots .owl-dot:hover span {
+    background: #869791;
+}
+
+/* Section Styling */
+section {
+    padding: 60px 0;
+}
+
+section h2 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-bottom: 40px;
+    position: relative;
+    display: inline-block;
+}
+
+section h2::after {
+    content: "";
+    position: absolute;
+    left: 50%;
+    bottom: -10px;
+    transform: translateX(-50%);
+    width: 60px;
+    height: 4px;
+    background-color: #000;
+    border-radius: 2px;
+}
+
+/* Card Styles */
+.card {
+    border: none;
+    border-radius: 10px;
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+.category-card .card-img-top,
+.product-card .card-img-top,
+.offer-card .card-img-top,
+.blog-card .card-img-top {
+    height: 250px;
+    object-fit: cover;
+}
+
+.product-card .card-img-top {
+    height: 200px;
+    object-fit: contain;
+    /* Use contain for product images to show full product */
+    padding: 15px;
+}
+
+.offer-card .card-img-top {
+    height: 200px;
+    object-fit: contain;
+    padding: 15px;
+}
+
+.video-thumbnail-wrapper {
+    position: relative;
+    display: block;
+    cursor: pointer;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.video-thumbnail-wrapper img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.play-icon-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 1;
+    transition: opacity 0.3s ease;
+}
+
+.video-thumbnail-wrapper:hover .play-icon-overlay {
+    opacity: 0.8;
+}
+
+.social-icons a {
+    font-size: 1.5rem;
+    transition: color 0.3s ease;
+}
+
+.social-icons a:hover {
+    color: #ccc !important;
+}
+
+/* Custom styles for Bootstrap Tabs */
+.nav-tabs {
+    border-bottom: 2px solid #dee2e6;
+}
+
+.nav-tabs .nav-link {
+    border: 1px solid transparent;
+    border-top-left-radius: 0.25rem;
+    border-top-right-radius: 0.25rem;
+    color: #495057;
+    margin-bottom: -2px;
+    /* Overlap border-bottom */
+    transition: color 0.3s ease, background-color 0.3s ease, border-color 0.3s ease;
+}
+
+.nav-tabs .nav-link:hover {
+    border-color: #e9ecef #e9ecef #dee2e6;
+    background-color: #f8f9fa;
+}
+
+.nav-tabs .nav-link.active {
+    color: #000;
+    background-color: #fff;
+    border-color: #dee2e6 #dee2e6 #fff;
+    font-weight: bold;
+}
+
+.tab-content {
+    padding-top: 20px;
+}
+
+/* Bestseller Card Specific Styles */
+.bestseller-card {
+    position: relative;
+    padding-top: 20px;
+    /* Space for the badge */
+}
+
+.bestseller-badge {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: #dc3545;
+    /* Red color for "BEST SELLER" */
+    color: white;
+    padding: 5px 10px;
+    font-size: 0.75rem;
+    font-weight: bold;
+    border-top-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    z-index: 10;
+}
+
+.product-card .product-description {
+    font-size: 0.9rem;
+    color: #666;
+    min-height: 40px;
+    /* Ensure consistent height for description */
+    margin-bottom: 10px;
+}
+
+.product-card .text-warning.fill-warning {
+    fill: #ffc107;
+    /* Fill color for star icons */
+}
+
+.product-card .btn-primary {
+    background-color: #212529;
+    /* Blue for Add to Cart button */
+    border-color: #212529;
+}
+
+.product-card .btn-primary:hover {
+    background-color: transparent;
+    border-color: #212529;
+    color: #212529;
+}
+
+.owl-nav button {
+    background: #f513e3 !important;
+    width: 50px;
+    height: 50px;
+    border-radius: 10px !important;
+    font-size: 30px !important;
+    color: #fff !important;
+}
+.bestseller-card img {
+    width: 60% !important;
+    display: block;
+    margin: 0 auto;
+}
+/* Animations */
+.animated-section {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+}
+
+.animated-section.animate__animated {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+section#why-choose-us {
+    background-image: linear-gradient(0deg, #FFFDE4, transparent);
+}
+
+.cart-icon {
+    gap: 10px !important;
+}
+
+.product-cat {
+    border: 0;
+    gap: 10px;
+}
+
+.product-cat li button {
+    background: #f513e3;
+    box-shadow: 0px 0px 0px #000;
+    border-radius: 30px !important;
+    color: #fff !important;
+}
+
+.product-cat li button.active {
+    color: #000 !important;
+    background: #fefce5 !important;
+    padding: 10px 20px;
+}
+
+.product-cat li button:hover {
+    background: #fefce5 !important;
+    color: #000 !important;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .carousel-caption {
+        bottom: 5%;
+        width: 90%;
+        padding: 10px;
+    }
+
+    .carousel-caption h5 {
+        font-size: 1.5rem;
+    }
+
+    .carousel-caption p {
+        font-size: 0.8rem;
+    }
+
+    section {
+        padding: 40px 0;
+    }
+
+    section h2 {
+        font-size: 2rem;
+    }
+
+    .navbar-nav {
+        align-items: flex-start;
+        /* Align items to the start */
+        padding-left: 15px;
+        /* Add some padding for better appearance */
+    }
+
+    .navbar-nav .nav-item {
+        text-align: left;
+        /* Ensure individual items are left-aligned */
+        width: 100%;
+        /* Make sure items take full width for consistent alignment */
+    }
+
+    .navbar-nav .dropdown-menu {
+        text-align: left;
+        /* Ensure dropdown menus are also left-aligned */
+    }
+
+    .d-flex.align-items-center {
+        justify-content: center;
+        margin-top: 15px;
+    }
+
+    /* Hide Owl Carousel nav on small screens */
+    .owl-theme .owl-nav {
+        display: none;
+    }
+
+    .nav-tabs {
+        flex-wrap: wrap;
+        /* Allow tabs to wrap on smaller screens */
+    }
+
+    .nav-tabs .nav-item {
+        flex-grow: 1;
+        /* Make tabs take equal width */
+        text-align: center;
+    }
+    .product-cat.nav-tabs .nav-item {
+    flex-grow: 0;
+}
+.map-placeholder iframe {
+    width: 100%;
+    height: 200px;
+}
+button.navbar-toggler {
+    margin: 0 !important;
+}
+
+.mob-cart {
+    margin: 0 !important;
+    position: relative;
+    left: 200px;
+}
+}
+
+@media (max-width: 576px) {
+
+    .product-cat.nav-tabs .nav-item {
+    flex-grow: 0;
+}
+    /* For smaller mobile screens */
+    .icon-lg {
+        width: 36px;
+        height: 36px;
+    }
+
+    .icon-xl {
+        width: 48px;
+        height: 48px;
+    }
+
+    .mob-cart {
+        margin: 0 !important;
+        left: 60px;
+    }
+
+    button.navbar-toggler {
+        margin: 0 !important;
+    }
+     .product-cat.nav-tabs .nav-item {
+    flex-grow: 0;
+}
+.map-placeholder iframe {
+    width: 100%;
+    height: 200px;
+}
+}
+
+/* Dropdown on hover for desktop */
+@media (min-width: 992px) {
+
+    /* Bootstrap's 'lg' breakpoint */
+    .navbar-nav .dropdown:hover .dropdown-menu {
+        display: block;
+        margin-top: 0;
+        /* remove the gap so it doesn't close */
+    }
+
+    .navbar-nav .dropdown-toggle::after {
+        display: none;
+        /* Hide the default arrow */
+    }
+}

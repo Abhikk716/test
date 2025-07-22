@@ -1,0 +1,1021 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Beauty & Wellness Homepage</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Animate.css for animations -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <!-- Owl Carousel CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+    <!-- Lucide Icons (for cart, search, social media) -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+
+<body>
+    <!-- Sticky Header (Navbar) -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm fixed-top">
+        <div class="container">
+            <a class="navbar-brand fw-bold fs-4" href="#">BeautyCo</a>
+
+            <!-- Mobile-specific elements (visible d-lg-none) -->
+            <div class="mob-cart d-flex align-items-center d-lg-none">
+                <a href="#" class="nav-link me-3" aria-label="Cart">
+                    <i data-lucide="shopping-cart" class="icon-size"></i>
+                </a>
+                <button class="btn btn-outline-dark border-0" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#mobileSearchCollapse" aria-expanded="false" aria-controls="mobileSearchCollapse"
+                    aria-label="Toggle search">
+                    <i data-lucide="search" class="icon-size"></i>
+                </button>
+            </div>
+            <button class="navbar-toggler d-lg-none ms-auto" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <!-- Desktop-specific elements (visible d-none d-lg-flex) -->
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav mx-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#home">Home</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="productsDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            Products <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round" class="lucide lucide-chevron-down-icon lucide-chevron-down">
+                                <path d="m6 9 6 6 6-6" />
+                            </svg>
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="productsDropdown">
+                            <li><a class="dropdown-item" href="#product-categories">Hair Care</a></li>
+                            <li><a class="dropdown-item" href="#product-categories">Stress Care</a></li>
+                            <li><a class="dropdown-item" href="#product-categories">Health Care</a></li>
+                            <li><a class="dropdown-item" href="#product-categories">Beard Care</a></li>
+                            <li><a class="dropdown-item" href="#product-categories">Beauty Care</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#testimonials">Reviews</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#blogs">Blogs</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contact Us</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="cart-icon d-flex align-items-center d-none d-lg-flex">
+                <a href="#" class="nav-link" aria-label="Cart">
+                    <i data-lucide="shopping-cart" class="icon-size"></i>
+                </a>
+                <form class="d-flex me-3">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-dark" type="submit" aria-label="Search button">
+                        <i data-lucide="search" class="icon-size"></i>
+                    </button>
+                </form>
+
+            </div>
+        </div>
+        <div class="collapse w-100 d-lg-none" id="mobileSearchCollapse">
+            <div class="card card-body bg-light border-0 rounded-0">
+                <form class="d-flex w-100 px-3">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-dark" type="submit" aria-label="Search button">
+                        <i data-lucide="search" class="icon-size"></i>
+                    </button>
+                </form>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main data-bs-spy="scroll" data-bs-target="#navbarNav" data-bs-offset="56" tabindex="0">
+        <!-- Hero/Banner Section -->
+        <section id="home" class="hero-section pt-5">
+            <div id="heroCarousel" class="owl-carousel owl-theme">
+                <div class="item">
+                    <img src="https://images-static.nykaa.com/uploads/fbe99f16-a128-453b-be4d-b0767eef53f6.gif"
+                        class="d-block w-100 img-fluid" alt="Banner Image 1">
+
+                </div>
+                <div class="item">
+                    <img src="https://images-static.nykaa.com/uploads/fbe99f16-a128-453b-be4d-b0767eef53f6.gif"
+                        class="d-block w-100 img-fluid" alt="Banner Image 2">
+
+                    <div class="item">
+                        <img src="https://images-static.nykaa.com/uploads/fbe99f16-a128-453b-be4d-b0767eef53f6.gif"
+                            class="d-block w-100 img-fluid" alt="Banner Image 3">
+
+                    </div>
+                </div>
+        </section>
+
+        <!-- Why Choose Us? Section -->
+        <section id="why-choose-us" class="py-5 animated-section">
+            <div class="container text-center">
+                <h2 class="mb-4 animate__animated animate__fadeInDown">Why Choose Us?</h2>
+                <p class="lead animate__animated animate__fadeInUp">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore
+                    et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+                    aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+                    cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
+                    culpa qui officia deserunt mollit anim id est laborum.
+                </p>
+                <div class="row mt-5">
+                    <div class="col-md-4 mb-4 animate__animated animate__fadeInLeft">
+                        <div class="card h-100 p-3 shadow-sm">
+                            <div class="card-body">
+                                <i data-lucide="leaf" class="icon-lg text-success mb-3"></i>
+                                <h5 class="card-title">Natural Ingredients</h5>
+                                <p class="card-text">Our products are crafted with the finest natural and ethically
+                                    sourced ingredients.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 mb-4 animate__animated animate__fadeInUp">
+                        <div class="card h-100 p-3 shadow-sm">
+                            <div class="card-body">
+                                <i data-lucide="award" class="icon-lg text-warning mb-3"></i>
+                                <h5 class="card-title">Quality Assured</h5>
+                                <p class="card-text">Every product undergoes rigorous quality checks to ensure your
+                                    satisfaction.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 mb-4 animate__animated animate__fadeInRight">
+                        <div class="card h-100 p-3 shadow-sm">
+                            <div class="card-body">
+                                <i data-lucide="heart" class="icon-lg text-danger mb-3"></i>
+                                <h5 class="card-title">Customer Love</h5>
+                                <p class="card-text">Join thousands of happy customers who trust us for their beauty and
+                                    wellness needs.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Product Categories Section -->
+        <section id="product-categories" class="py-5 animated-section">
+            <div class="container">
+                <h2 class="text-center mb-5 animate__animated animate__fadeInDown">Product Categories</h2>
+
+                <!-- Tab Navigation -->
+                <ul class="product-cat nav nav-tabs justify-content-center mb-4" id="productCategoryTabs"
+                    role="tablist">
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link active" id="hair-care-tab" data-bs-toggle="tab"
+                            data-bs-target="#hair-care" type="button" role="tab" aria-controls="hair-care"
+                            aria-selected="true">Hair Care</button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link" id="stress-care-tab" data-bs-toggle="tab" data-bs-target="#stress-care"
+                            type="button" role="tab" aria-controls="stress-care" aria-selected="false">Stress
+                            Care</button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link" id="health-care-tab" data-bs-toggle="tab" data-bs-target="#health-care"
+                            type="button" role="tab" aria-controls="health-care" aria-selected="false">Health
+                            Care</button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link" id="beard-care-tab" data-bs-toggle="tab" data-bs-target="#beard-care"
+                            type="button" role="tab" aria-controls="beard-care" aria-selected="false">Beard
+                            Care</button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link" id="beauty-care-tab" data-bs-toggle="tab" data-bs-target="#beauty-care"
+                            type="button" role="tab" aria-controls="beauty-care" aria-selected="false">Beauty
+                            Care</button>
+                    </li>
+                </ul>
+
+                <!-- Tab Content -->
+                <div class="tab-content" id="productCategoryTabsContent">
+                    <!-- Hair Care Tab Pane -->
+                    <div class="tab-pane fade show active" id="hair-care" role="tabpanel"
+                        aria-labelledby="hair-care-tab">
+                        <div class="row">
+                            <div class="col-lg-3 col-md-6 mb-4">
+                                <div class="card h-100 shadow-sm product-card">
+                                    <img src="https://images.mamaearth.in/catalog/product/1/_/1_white_bg_31.jpg"
+                                        class="card-img-top" alt="Argan Oil Shampoo">
+                                    <div class="card-body text-center">
+                                        <h5 class="card-title">Argan Oil Shampoo</h5>
+                                        <p class="card-text text-muted">For Dry Hair</p>
+                                        <p class="fw-bold">$22.00</p>
+                                        <button class="btn btn-dark btn-sm">Add to Cart</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-3 col-md-6 mb-4">
+                                <div class="card h-100 shadow-sm product-card">
+                                    <img src="https://images.mamaearth.in/catalog/product/1/_/1_white_bg_31.jpg"
+                                        class="card-img-top" alt="Keratin Conditioner">
+                                    <div class="card-body text-center">
+                                        <h5 class="card-title">Keratin Conditioner</h5>
+                                        <p class="card-text text-muted">For Damaged Hair</p>
+                                        <p class="fw-bold">$28.00</p>
+                                        <button class="btn btn-dark btn-sm">Add to Cart</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-3 col-md-6 mb-4">
+                                <div class="card h-100 shadow-sm product-card">
+                                    <img src="https://images.mamaearth.in/catalog/product/1/_/1_white_bg_31.jpg"
+                                        class="card-img-top" alt="Hair Growth Serum">
+                                    <div class="card-body text-center">
+                                        <h5 class="card-title">Hair Growth Serum</h5>
+                                        <p class="card-text text-muted">Stimulates Growth</p>
+                                        <p class="fw-bold">$35.00</p>
+                                        <button class="btn btn-dark btn-sm">Add to Cart</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-3 col-md-6 mb-4">
+                                <div class="card h-100 shadow-sm product-card">
+                                    <img src="https://images.mamaearth.in/catalog/product/1/_/1_white_bg_31.jpg"
+                                        class="card-img-top" alt="Deep Repair Mask">
+                                    <div class="card-body text-center">
+                                        <h5 class="card-title">Deep Repair Mask</h5>
+                                        <p class="card-text text-muted">Intensive Treatment</p>
+                                        <p class="fw-bold">$30.00</p>
+                                        <button class="btn btn-dark btn-sm">Add to Cart</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Stress Care Tab Pane -->
+                    <div class="tab-pane fade" id="stress-care" role="tabpanel" aria-labelledby="stress-care-tab">
+                        <div class="row">
+                            <div class="col-lg-3 col-md-6 mb-4">
+                                <div class="card h-100 shadow-sm product-card">
+                                    <img src="https://images.mamaearth.in/catalog/product/1/_/1_white_bg_31.jpg"
+                                        class="card-img-top" alt="Lavender Essential Oil">
+                                    <div class="card-body text-center">
+                                        <h5 class="card-title">Lavender Essential Oil</h5>
+                                        <p class="card-text text-muted">Calming Aroma</p>
+                                        <p class="fw-bold">$15.00</p>
+                                        <button class="btn btn-dark btn-sm">Add to Cart</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-3 col-md-6 mb-4">
+                                <div class="card h-100 shadow-sm product-card">
+                                    <img src="https://images.mamaearth.in/catalog/product/1/_/1_white_bg_31.jpg"
+                                        class="card-img-top" alt="Chamomile Tea Blend">
+                                    <div class="card-body text-center">
+                                        <h5 class="card-title">Chamomile Tea Blend</h5>
+                                        <p class="card-text text-muted">Relaxing Brew</p>
+                                        <p class="fw-bold">$12.00</p>
+                                        <button class="btn btn-dark btn-sm">Add to Cart</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-3 col-md-6 mb-4">
+                                <div class="card h-100 shadow-sm product-card">
+                                    <img src="https://images.mamaearth.in/catalog/product/1/_/1_white_bg_31.jpg"
+                                        class="card-img-top" alt="Aromatherapy Diffuser">
+                                    <div class="card-body text-center">
+                                        <h5 class="card-title">Aromatherapy Diffuser</h5>
+                                        <p class="card-text text-muted">Soothing Ambiance</p>
+                                        <p class="fw-bold">$40.00</p>
+                                        <button class="btn btn-dark btn-sm">Add to Cart</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-3 col-md-6 mb-4">
+                                <div class="card h-100 shadow-sm product-card">
+                                    <img src="https://images.mamaearth.in/catalog/product/1/_/1_white_bg_31.jpg"
+                                        class="card-img-top" alt="Weighted Blanket">
+                                    <div class="card-body text-center">
+                                        <h5 class="card-title">Weighted Blanket</h5>
+                                        <p class="card-text text-muted">Comforting Pressure</p>
+                                        <p class="fw-bold">$75.00</p>
+                                        <button class="btn btn-dark btn-sm">Add to Cart</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Health Care Tab Pane -->
+                    <div class="tab-pane fade" id="health-care" role="tabpanel" aria-labelledby="health-care-tab">
+                        <div class="row">
+                            <div class="col-lg-3 col-md-6 mb-4">
+                                <div class="card h-100 shadow-sm product-card">
+                                    <img src="https://images.mamaearth.in/catalog/product/1/_/1_white_bg_31.jpg"
+                                        class="card-img-top" alt="Multivitamin Gummies">
+                                    <div class="card-body text-center">
+                                        <h5 class="card-title">Multivitamin Gummies</h5>
+                                        <p class="card-text text-muted">Daily Essentials</p>
+                                        <p class="fw-bold">$20.00</p>
+                                        <button class="btn btn-dark btn-sm">Add to Cart</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-3 col-md-6 mb-4">
+                                <div class="card h-100 shadow-sm product-card">
+                                    <img src="https://images.mamaearth.in/catalog/product/1/_/1_white_bg_31.jpg"
+                                        class="card-img-top" alt="Probiotic Capsules">
+                                    <div class="card-body text-center">
+                                        <h5 class="card-title">Probiotic Capsules</h5>
+                                        <p class="card-text text-muted">Gut Health Support</p>
+                                        <p class="fw-bold">$25.00</p>
+                                        <button class="btn btn-dark btn-sm">Add to Cart</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-3 col-md-6 mb-4">
+                                <div class="card h-100 shadow-sm product-card">
+                                    <img src="https://images.mamaearth.in/catalog/product/1/_/1_white_bg_31.jpg"
+                                        class="card-img-top" alt="Omega-3 Fish Oil">
+                                    <div class="card-body text-center">
+                                        <h5 class="card-title">Omega-3 Fish Oil</h5>
+                                        <p class="card-text text-muted">Heart & Brain Health</p>
+                                        <p class="fw-bold">$30.00</p>
+                                        <button class="btn btn-dark btn-sm">Add to Cart</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-3 col-md-6 mb-4">
+                                <div class="card h-100 shadow-sm product-card">
+                                    <img src="https://images.mamaearth.in/catalog/product/1/_/1_white_bg_31.jpg"
+                                        class="card-img-top" alt="Immune Support Blend">
+                                    <div class="card-body text-center">
+                                        <h5 class="card-title">Immune Support Blend</h5>
+                                        <p class="card-text text-muted">Boost Immunity</p>
+                                        <p class="fw-bold">$28.00</p>
+                                        <button class="btn btn-dark btn-sm">Add to Cart</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Beard Care Tab Pane -->
+                    <div class="tab-pane fade" id="beard-care" role="tabpanel" aria-labelledby="beard-care-tab">
+                        <div class="row">
+                            <div class="col-lg-3 col-md-6 mb-4">
+                                <div class="card h-100 shadow-sm product-card">
+                                    <img src="https://images.mamaearth.in/catalog/product/1/_/1_white_bg_31.jpg"
+                                        class="card-img-top" alt="Beard Growth Oil">
+                                    <div class="card-body text-center">
+                                        <h5 class="card-title">Beard Growth Oil</h5>
+                                        <p class="card-text text-muted">Stimulates Growth</p>
+                                        <p class="fw-bold">$20.00</p>
+                                        <button class="btn btn-dark btn-sm">Add to Cart</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-3 col-md-6 mb-4">
+                                <div class="card h-100 shadow-sm product-card">
+                                    <img src="https://images.mamaearth.in/catalog/product/1/_/1_white_bg_31.jpg"
+                                        class="card-img-top" alt="Beard Balm">
+                                    <div class="card-body text-center">
+                                        <h5 class="card-title">Beard Balm</h5>
+                                        <p class="card-text text-muted">Styling & Conditioning</p>
+                                        <p class="fw-bold">$18.00</p>
+                                        <button class="btn btn-dark btn-sm">Add to Cart</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-3 col-md-6 mb-4">
+                                <div class="card h-100 shadow-sm product-card">
+                                    <img src="https://images.mamaearth.in/catalog/product/1/_/1_white_bg_31.jpg"
+                                        class="card-img-top" alt="Beard Wash & Conditioner">
+                                    <div class="card-body text-center">
+                                        <h5 class="card-title">Beard Wash & Conditioner</h5>
+                                        <p class="card-text text-muted">Cleanse & Soften</p>
+                                        <p class="fw-bold">$25.00</p>
+                                        <button class="btn btn-dark btn-sm">Add to Cart</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-3 col-md-6 mb-4">
+                                <div class="card h-100 shadow-sm product-card">
+                                    <img src="https://images.mamaearth.in/catalog/product/1/_/1_white_bg_31.jpg"
+                                        class="card-img-top" alt="Beard Brush & Comb Set">
+                                    <div class="card-body text-center">
+                                        <h5 class="card-title">Beard Brush & Comb Set</h5>
+                                        <p class="card-text text-muted">Grooming Tools</p>
+                                        <p class="fw-bold">$15.00</p>
+                                        <button class="btn btn-dark btn-sm">Add to Cart</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Beauty Care Tab Pane -->
+                    <div class="tab-pane fade" id="beauty-care" role="tabpanel" aria-labelledby="beauty-care-tab">
+                        <div class="row">
+                            <div class="col-lg-3 col-md-6 mb-4">
+                                <div class="card h-100 shadow-sm product-card">
+                                    <img src="https://images.mamaearth.in/catalog/product/1/_/1_white_bg_31.jpg"
+                                        class="card-img-top" alt="Vitamin C Serum">
+                                    <div class="card-body text-center">
+                                        <h5 class="card-title">Vitamin C Serum</h5>
+                                        <p class="card-text text-muted">Brightening & Anti-Aging</p>
+                                        <p class="fw-bold">$40.00</p>
+                                        <button class="btn btn-dark btn-sm">Add to Cart</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-3 col-md-6 mb-4">
+                                <div class="card h-100 shadow-sm product-card">
+                                    <img src="https://images.mamaearth.in/catalog/product/1/_/1_white_bg_31.jpg"
+                                        class="card-img-top" alt="Hyaluronic Acid Moisturizer">
+                                    <div class="card-body text-center">
+                                        <h5 class="card-title">Hyaluronic Acid Moisturizer</h5>
+                                        <p class="card-text text-muted">Deep Hydration</p>
+                                        <p class="fw-bold">$35.00</p>
+                                        <button class="btn btn-dark btn-sm">Add to Cart</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-3 col-md-6 mb-4">
+                                <div class="card h-100 shadow-sm product-card">
+                                    <img src="https://images.mamaearth.in/catalog/product/1/_/1_white_bg_31.jpg"
+                                        class="card-img-top" alt="Clay Face Mask">
+                                    <div class="card-body text-center">
+                                        <h5 class="card-title">Clay Face Mask</h5>
+                                        <p class="card-text text-muted">Detox & Purify</p>
+                                        <p class="fw-bold">$25.00</p>
+                                        <button class="btn btn-dark btn-sm">Add to Cart</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-3 col-md-6 mb-4">
+                                <div class="card h-100 shadow-sm product-card">
+                                    <img src="https://images.mamaearth.in/catalog/product/1/_/1_white_bg_31.jpg"
+                                        class="card-img-top" alt="Eye Cream with Retinol">
+                                    <div class="card-body text-center">
+                                        <h5 class="card-title">Eye Cream with Retinol</h5>
+                                        <p class="card-text text-muted">Reduces Fine Lines</p>
+                                        <p class="fw-bold">$45.00</p>
+                                        <button class="btn btn-dark btn-sm">Add to Cart</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Our Bestsellers Section -->
+        <section id="bestsellers" class="py-5 bg-light animated-section">
+            <div class="container">
+                <h2 class="text-center mb-5 animate__animated animate__fadeInDown">Our Bestsellers</h2>
+                <div id="bestsellersCarousel" class="owl-carousel owl-theme">
+                    <div class="item">
+                        <div class="card h-100 product-card bestseller-card">
+                            <span class="bestseller-badge">BEST SELLER</span>
+                            <img src="https://images.mamaearth.in/catalog/product/v/i/vit-c-glow-cream1_1_1.jpg"
+                                class="card-img-top" alt="Ubtan Detan Face Pack">
+                            <div class="card-body text-center">
+                                <h5 class="card-title">Ubtan Detan Face Pack with Turmeric & Saffron</h5>
+                                <p class="card-text text-muted small">For Normal to Oily Skin - 200 g</p>
+                                <p class="card-text product-description">Natural, DIY-like Texture | Reduces Tan, Adds
+                                    Glow | Crafted
+                                    with Nature's Best Ingredients</p>
+                                <div class="d-flex justify-content-center align-items-center my-2">
+                                    <i data-lucide="star" class="icon-sm text-warning fill-warning"></i>
+                                    <span class="ms-1 text-sm">4.8</span>
+                                    <span class="ms-2 text-muted text-sm">78 Reviews</span>
+                                </div>
+                                <p class="fw-bold fs-4 text-dark">₹499</p>
+                                <button class="btn btn-primary w-100">ADD TO CART</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="card h-100 product-card bestseller-card">
+                            <span class="bestseller-badge">BEST SELLER</span>
+                            <img src="https://images.mamaearth.in/catalog/product/v/i/vit-c-glow-cream1_1_1.jpg"
+                                class="card-img-top" alt="Rosemary Anti-Hair Fall Shampoo">
+                            <div class="card-body text-center">
+                                <h5 class="card-title">Rosemary Anti-Hair Fall Shampoo with Rosemary & Methi Dana</h5>
+                                <p class="card-text text-muted small">For Reducing Hair Fall - 250ml</p>
+                                <p class="card-text product-description">Gives up to 94% Stronger Hair | Up to 93% Less
+                                    Hair Fall |
+                                    Made Safe Certified</p>
+                                <div class="d-flex justify-content-center align-items-center my-2">
+                                    <i data-lucide="star" class="icon-sm text-warning fill-warning"></i>
+                                    <span class="ms-1 text-sm">5.0</span>
+                                    <span class="ms-2 text-muted text-sm">111 Reviews</span>
+                                </div>
+                                <p class="fw-bold fs-4 text-dark">₹349</p>
+                                <button class="btn btn-primary w-100">ADD TO CART</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="card h-100  product-card bestseller-card">
+                            <span class="bestseller-badge">BEST SELLER</span>
+                            <img src="https://images.mamaearth.in/catalog/product/v/i/vit-c-glow-cream1_1_1.jpg"
+                                class="card-img-top" alt="Beetroot Gentle Face Wash">
+                            <div class="card-body text-center">
+                                <h5 class="card-title">Beetroot Gentle Face Wash With Beetroot & Hyaluronic Acid</h5>
+                                <p class="card-text text-muted small">For Hydrated Pink Glow - 100 ml</p>
+                                <p class="card-text product-description">Gives Natural Pink Glow | Hydrates Skin
+                                    Intensely</p>
+                                <div class="d-flex justify-content-center align-items-center my-2">
+                                    <i data-lucide="star" class="icon-sm text-warning fill-warning"></i>
+                                    <span class="ms-1 text-sm">5.0</span>
+                                    <span class="ms-2 text-muted text-sm">148 Reviews</span>
+                                </div>
+                                <p class="fw-bold fs-4 text-danger">₹215 <span
+                                        class="text-muted text-decoration-line-through ms-2">₹269</span>
+                                    <span class="text-success ms-1">20% off</span>
+                                </p>
+                                <button class="btn btn-primary w-100">ADD TO CART</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="card h-100 product-card bestseller-card">
+                            <span class="bestseller-badge">BEST SELLER</span>
+                            <img src="https://images.mamaearth.in/catalog/product/v/i/vit-c-glow-cream1_1_1.jpg"
+                                class="card-img-top" alt="Onion Shampoo">
+                            <div class="card-body text-center">
+                                <h5 class="card-title">Onion Shampoo with Onion and Plant Keratin</h5>
+                                <p class="card-text text-muted small">For Hair Fall Control - 250ml</p>
+                                <p class="card-text product-description">Reduces Hair Fall | Strengthens Hair | Softens
+                                    Hair</p>
+                                <div class="d-flex justify-content-center align-items-center my-2">
+                                    <i data-lucide="star" class="icon-sm text-warning fill-warning"></i>
+                                    <span class="ms-1 text-sm">4.7</span>
+                                    <span class="ms-2 text-muted text-sm">877 Reviews</span>
+                                </div>
+                                <p class="fw-bold fs-4 text-dark">₹349</p>
+                                <button class="btn btn-primary w-100">ADD TO CART</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="card h-100 product-card bestseller-card">
+                            <span class="bestseller-badge">BEST SELLER</span>
+                            <img src="https://images.mamaearth.in/catalog/product/v/i/vit-c-glow-cream1_1_1.jpg"
+                                class="card-img-top" alt="Hydrating Face Serum">
+                            <div class="card-body text-center">
+                                <h5 class="card-title">Hydrating Face Serum</h5>
+                                <p class="card-text text-muted small">Beauty Care - 30ml</p>
+                                <p class="card-text product-description">Deeply hydrates and plumps skin for a radiant
+                                    glow.</p>
+                                <div class="d-flex justify-content-center align-items-center my-2">
+                                    <i data-lucide="star" class="icon-sm text-warning fill-warning"></i>
+                                    <span class="ms-1 text-sm">4.9</span>
+                                    <span class="ms-2 text-muted text-sm">210 Reviews</span>
+                                </div>
+                                <p class="fw-bold fs-4 text-dark">₹450</p>
+                                <button class="btn btn-primary w-100">ADD TO CART</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Combo Offers Section -->
+        <section id="combo-offers" class="py-5 animated-section">
+            <div class="container">
+                <h2 class="text-center mb-5 animate__animated animate__fadeInDown">Combo Offers</h2>
+                <div class="row justify-content-center">
+                    <div class="col-lg-4 col-md-6 mb-4 animate__animated animate__flipInY">
+                        <div class="card h-100 shadow-sm offer-card text-center">
+                            <img src="https://images.mamaearth.in/catalog/product/1/_/1_27.jpg" class="card-img-top"
+                                alt="Hair Care Combo">
+                            <div class="card-body">
+                                <h5 class="card-title">Hair Growth Duo</h5>
+                                <p class="card-text">Shampoo & Conditioner Bundle</p>
+                                <p class="fw-bold fs-4 text-danger">Only $40.00</p>
+                                <p class="text-muted text-decoration-line-through">$50.00</p>
+                                <button class="btn btn-dark">Grab Offer</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 mb-4 animate__animated animate__flipInY animate__delay-1s">
+                        <div class="card h-100 shadow-sm offer-card text-center">
+                            <img src="https://images.mamaearth.in/catalog/product/1/_/1_27.jpg" class="card-img-top"
+                                alt="Skincare Combo">
+                            <div class="card-body">
+                                <h5 class="card-title">Daily Glow Kit</h5>
+                                <p class="card-text">Cleanser, Serum & Moisturizer</p>
+                                <p class="fw-bold fs-4 text-danger">Only $99.00</p>
+                                <p class="text-muted text-decoration-line-through">$120.00</p>
+                                <button class="btn btn-dark">Grab Offer</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 mb-4 animate__animated animate__flipInY animate__delay-2s">
+                        <div class="card h-100 shadow-sm offer-card text-center">
+                            <img src="https://images.mamaearth.in/catalog/product/1/_/1_27.jpg" class="card-img-top"
+                                alt="Wellness Combo">
+                            <div class="card-body">
+                                <h5 class="card-title">Relax & Rejuvenate</h5>
+                                <p class="card-text">Essential Oil Diffuser & Bath Salts</p>
+                                <p class="fw-bold fs-4 text-danger">Only $65.00</p>
+                                <p class="text-muted text-decoration-line-through">$80.00</p>
+                                <button class="btn btn-dark">Grab Offer</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Testimonials Section -->
+        <section id="testimonials" class="py-5 bg-light animated-section">
+            <div class="container">
+                <h2 class="text-center mb-5 animate__animated animate__fadeInDown">What Our Customers Say</h2>
+                <div class="row">
+                    <!-- Video Testimonials -->
+                    <div class="col-lg-12 animate__animated animate__fadeInRight">
+                        <h3 class="mb-4">Video Testimonials</h3>
+                        <div id="videoTestimonialsCarousel" class="owl-carousel owl-theme owl-loaded owl-drag">
+
+
+
+
+                            <div class="owl-stage-outer">
+                                <div class="owl-stage"
+                                    style="transform: translate3d(-2624px, 0px, 0px); transition: 0.25s; width: 5248px;">
+                                    <div class="owl-item cloned" style="width: 636px; margin-right: 20px;">
+                                        <div class="item">
+                                            <div class="video-thumbnail-wrapper shadow-sm"
+                                                style="position: relative; width: 300px; height: 533px; cursor: pointer;">
+                                                <a href="https://youtube.com/shorts/pG5xAX2Xhb8?si=lwuoOALOrm60-s-f"
+                                                    target="_blank">
+                                                    <img src="https://img.youtube.com/vi/pG5xAX2Xhb8/hqdefault.jpg"
+                                                        alt="Shorts Thumbnail"
+                                                        style="width: 100%; height: 100%; object-fit: cover; border-radius: 10px;">
+                                                    <img src="https://cdn-icons-png.flaticon.com/512/727/727245.png"
+                                                        alt="Play" style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%);
+                                                 width: 64px; height: 64px; opacity: 0.8;">
+                                                    <div class="play-icon-overlay">
+                                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                                            viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                                            stroke-width="2" stroke-linecap="round"
+                                                            stroke-linejoin="round" data-lucide="play-circle"
+                                                            class="lucide lucide-play-circle icon-xl text-white">
+                                                            <circle cx="12" cy="12" r="10"></circle>
+                                                            <polygon points="10 8 16 12 10 16 10 8"></polygon>
+                                                        </svg>
+                                                    </div>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="owl-item cloned" style="width: 636px; margin-right: 20px;">
+                                        <div class="item">
+                                            <div class="video-thumbnail-wrapper shadow-sm"
+                                                style="position: relative; width: 300px; height: 533px; cursor: pointer;">
+                                                <a href="https://youtube.com/shorts/pG5xAX2Xhb8?si=lwuoOALOrm60-s-f"
+                                                    target="_blank">
+                                                    <img src="https://img.youtube.com/vi/pG5xAX2Xhb8/hqdefault.jpg"
+                                                        alt="Shorts Thumbnail"
+                                                        style="width: 100%; height: 100%; object-fit: cover; border-radius: 10px;">
+                                                    <img src="https://cdn-icons-png.flaticon.com/512/727/727245.png"
+                                                        alt="Play" style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%);
+                                                 width: 64px; height: 64px; opacity: 0.8;">
+                                                    <div class="play-icon-overlay">
+                                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                                            viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                                            stroke-width="2" stroke-linecap="round"
+                                                            stroke-linejoin="round" data-lucide="play-circle"
+                                                            class="lucide lucide-play-circle icon-xl text-white">
+                                                            <circle cx="12" cy="12" r="10"></circle>
+                                                            <polygon points="10 8 16 12 10 16 10 8"></polygon>
+                                                        </svg>
+                                                    </div>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="owl-item" style="width: 636px; margin-right: 20px;">
+                                        <div class="item">
+                                            <div class="video-thumbnail-wrapper shadow-sm"
+                                                style="position: relative; width: 300px; height: 533px; cursor: pointer;">
+                                                <a href="https://youtube.com/shorts/pG5xAX2Xhb8?si=lwuoOALOrm60-s-f"
+                                                    target="_blank">
+                                                    <img src="https://img.youtube.com/vi/pG5xAX2Xhb8/hqdefault.jpg"
+                                                        alt="Shorts Thumbnail"
+                                                        style="width: 100%; height: 100%; object-fit: cover; border-radius: 10px;">
+                                                    <img src="https://cdn-icons-png.flaticon.com/512/727/727245.png"
+                                                        alt="Play" style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%);
+                                                 width: 64px; height: 64px; opacity: 0.8;">
+                                                    <div class="play-icon-overlay">
+                                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                                            viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                                            stroke-width="2" stroke-linecap="round"
+                                                            stroke-linejoin="round" data-lucide="play-circle"
+                                                            class="lucide lucide-play-circle icon-xl text-white">
+                                                            <circle cx="12" cy="12" r="10"></circle>
+                                                            <polygon points="10 8 16 12 10 16 10 8"></polygon>
+                                                        </svg>
+                                                    </div>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="owl-item" style="width: 636px; margin-right: 20px;">
+                                        <div class="item">
+                                            <div class="video-thumbnail-wrapper shadow-sm"
+                                                style="position: relative; width: 300px; height: 533px; cursor: pointer;">
+                                                <a href="https://youtube.com/shorts/pG5xAX2Xhb8?si=lwuoOALOrm60-s-f"
+                                                    target="_blank">
+                                                    <img src="https://img.youtube.com/vi/pG5xAX2Xhb8/hqdefault.jpg"
+                                                        alt="Shorts Thumbnail"
+                                                        style="width: 100%; height: 100%; object-fit: cover; border-radius: 10px;">
+                                                    <img src="https://cdn-icons-png.flaticon.com/512/727/727245.png"
+                                                        alt="Play" style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%);
+                                                 width: 64px; height: 64px; opacity: 0.8;">
+                                                    <div class="play-icon-overlay">
+                                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                                            viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                                            stroke-width="2" stroke-linecap="round"
+                                                            stroke-linejoin="round" data-lucide="play-circle"
+                                                            class="lucide lucide-play-circle icon-xl text-white">
+                                                            <circle cx="12" cy="12" r="10"></circle>
+                                                            <polygon points="10 8 16 12 10 16 10 8"></polygon>
+                                                        </svg>
+                                                    </div>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="owl-item active" style="width: 636px; margin-right: 20px;">
+                                        <div class="item">
+                                            <div class="video-thumbnail-wrapper shadow-sm"
+                                                style="position: relative; width: 300px; height: 533px; cursor: pointer;">
+                                                <a href="https://youtube.com/shorts/pG5xAX2Xhb8?si=lwuoOALOrm60-s-f"
+                                                    target="_blank">
+                                                    <img src="https://img.youtube.com/vi/pG5xAX2Xhb8/hqdefault.jpg"
+                                                        alt="Shorts Thumbnail"
+                                                        style="width: 100%; height: 100%; object-fit: cover; border-radius: 10px;">
+                                                    <img src="https://cdn-icons-png.flaticon.com/512/727/727245.png"
+                                                        alt="Play" style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%);
+                                                 width: 64px; height: 64px; opacity: 0.8;">
+                                                    <div class="play-icon-overlay">
+                                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                                            viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                                            stroke-width="2" stroke-linecap="round"
+                                                            stroke-linejoin="round" data-lucide="play-circle"
+                                                            class="lucide lucide-play-circle icon-xl text-white">
+                                                            <circle cx="12" cy="12" r="10"></circle>
+                                                            <polygon points="10 8 16 12 10 16 10 8"></polygon>
+                                                        </svg>
+                                                    </div>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="owl-item" style="width: 636px; margin-right: 20px;">
+                                        <div class="item">
+                                            <div class="video-thumbnail-wrapper shadow-sm"
+                                                style="position: relative; width: 300px; height: 533px; cursor: pointer;">
+                                                <a href="https://youtube.com/shorts/pG5xAX2Xhb8?si=lwuoOALOrm60-s-f"
+                                                    target="_blank">
+                                                    <img src="https://img.youtube.com/vi/pG5xAX2Xhb8/hqdefault.jpg"
+                                                        alt="Shorts Thumbnail"
+                                                        style="width: 100%; height: 100%; object-fit: cover; border-radius: 10px;">
+                                                    <img src="https://cdn-icons-png.flaticon.com/512/727/727245.png"
+                                                        alt="Play" style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%);
+                                                 width: 64px; height: 64px; opacity: 0.8;">
+                                                    <div class="play-icon-overlay">
+                                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                                            viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                                            stroke-width="2" stroke-linecap="round"
+                                                            stroke-linejoin="round" data-lucide="play-circle"
+                                                            class="lucide lucide-play-circle icon-xl text-white">
+                                                            <circle cx="12" cy="12" r="10"></circle>
+                                                            <polygon points="10 8 16 12 10 16 10 8"></polygon>
+                                                        </svg>
+                                                    </div>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="owl-item cloned" style="width: 636px; margin-right: 20px;">
+                                        <div class="item">
+                                            <div class="video-thumbnail-wrapper shadow-sm"
+                                                style="position: relative; width: 300px; height: 533px; cursor: pointer;">
+                                                <a href="https://youtube.com/shorts/pG5xAX2Xhb8?si=lwuoOALOrm60-s-f"
+                                                    target="_blank">
+                                                    <img src="https://img.youtube.com/vi/pG5xAX2Xhb8/hqdefault.jpg"
+                                                        alt="Shorts Thumbnail"
+                                                        style="width: 100%; height: 100%; object-fit: cover; border-radius: 10px;">
+                                                    <img src="https://cdn-icons-png.flaticon.com/512/727/727245.png"
+                                                        alt="Play" style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%);
+                                                 width: 64px; height: 64px; opacity: 0.8;">
+                                                    <div class="play-icon-overlay">
+                                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                                            viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                                            stroke-width="2" stroke-linecap="round"
+                                                            stroke-linejoin="round" data-lucide="play-circle"
+                                                            class="lucide lucide-play-circle icon-xl text-white">
+                                                            <circle cx="12" cy="12" r="10"></circle>
+                                                            <polygon points="10 8 16 12 10 16 10 8"></polygon>
+                                                        </svg>
+                                                    </div>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="owl-item cloned" style="width: 636px; margin-right: 20px;">
+                                        <div class="item">
+                                            <div class="video-thumbnail-wrapper shadow-sm"
+                                                style="position: relative; width: 300px; height: 533px; cursor: pointer;">
+                                                <a href="https://youtube.com/shorts/pG5xAX2Xhb8?si=lwuoOALOrm60-s-f"
+                                                    target="_blank">
+                                                    <img src="https://img.youtube.com/vi/pG5xAX2Xhb8/hqdefault.jpg"
+                                                        alt="Shorts Thumbnail"
+                                                        style="width: 100%; height: 100%; object-fit: cover; border-radius: 10px;">
+                                                    <img src="https://cdn-icons-png.flaticon.com/512/727/727245.png"
+                                                        alt="Play" style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%);
+                                                 width: 64px; height: 64px; opacity: 0.8;">
+                                                    <div class="play-icon-overlay">
+                                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                                            viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                                            stroke-width="2" stroke-linecap="round"
+                                                            stroke-linejoin="round" data-lucide="play-circle"
+                                                            class="lucide lucide-play-circle icon-xl text-white">
+                                                            <circle cx="12" cy="12" r="10"></circle>
+                                                            <polygon points="10 8 16 12 10 16 10 8"></polygon>
+                                                        </svg>
+                                                    </div>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="owl-nav"><button type="button" role="presentation" class="owl-prev"><span
+                                        aria-label="Previous">‹</span></button><button type="button" role="presentation"
+                                    class="owl-next"><span aria-label="Next">›</span></button></div>
+                            <div class="owl-dots"><button role="button" class="owl-dot"><span></span></button><button
+                                    role="button" class="owl-dot"><span></span></button><button role="button"
+                                    class="owl-dot active"><span></span></button><button role="button"
+                                    class="owl-dot"><span></span></button></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Blogs Section -->
+        <section id="blogs" class="py-5 animated-section">
+            <div class="container">
+                <h2 class="text-center mb-5 animate__animated animate__fadeInDown">Our Latest Blogs</h2>
+                <div class="row">
+                    <div class="col-lg-4 col-md-6 mb-4 animate__animated animate__fadeInUp">
+                        <div class="card h-100 shadow-sm blog-card">
+                            <img src="https://mamaearth.in/blog/wp-content/uploads/2025/05/unnamed-360x250.jpg"
+                                class="card-img-top" alt="Blog Post 1">
+                            <div class="card-body">
+                                <h5 class="card-title">The Ultimate Skincare Routine for Glowing Skin</h5>
+                                <p class="card-text text-muted small">By Admin | July 15, 2025</p>
+                                <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do
+                                    eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                                <a href="#" class="btn btn-link p-0">Read More <i data-lucide="arrow-right"
+                                        class="icon-sm"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 mb-4 animate__animated animate__fadeInUp animate__delay-1s">
+                        <div class="card h-100 shadow-sm blog-card">
+                            <img src="https://mamaearth.in/blog/wp-content/uploads/2025/05/unnamed-360x250.jpg"
+                                class="card-img-top" alt="Blog Post 2">
+                            <div class="card-body">
+                                <h5 class="card-title">5 Essential Tips for Healthy and Strong Hair</h5>
+                                <p class="card-text text-muted small">By Admin | July 10, 2025</p>
+                                <p class="card-text">Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
+                                    nisi ut aliquip ex ea commodo consequat.</p>
+                                <a href="#" class="btn btn-link p-0">Read More <i data-lucide="arrow-right"
+                                        class="icon-sm"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 mb-4 animate__animated animate__fadeInUp animate__delay-2s">
+                        <div class="card h-100 shadow-sm blog-card">
+                            <img src="https://mamaearth.in/blog/wp-content/uploads/2025/05/unnamed-360x250.jpg"
+                                class="card-img-top" alt="Blog Post 3">
+                            <div class="card-body">
+                                <h5 class="card-title">Mindfulness for Stress Relief: A Beginner's Guide</h5>
+                                <p class="card-text text-muted small">By Admin | July 05, 2025</p>
+                                <p class="card-text">Duis aute irure dolor in reprehenderit in voluptate velit esse
+                                    cillum dolore eu fugiat nulla pariatur.</p>
+                                <a href="#" class="btn btn-link p-0">Read More <i data-lucide="arrow-right"
+                                        class="icon-sm"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer id="contact" class="bg-dark text-white py-5">
+        <div class="container">
+            <div class="row">
+                <!-- Contact Us Form -->
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <h5 class="mb-3">Contact Us</h5>
+                    <form>
+                        <div class="mb-3">
+                            <input type="text" class="form-control" placeholder="Your Name" required>
+                        </div>
+                        <div class="mb-3">
+                            <input type="email" class="form-control" placeholder="Your Email" required>
+                        </div>
+                        <div class="mb-3">
+                            <textarea class="form-control" rows="3" placeholder="Your Message" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-light">Send Message</button>
+                    </form>
+                </div>
+
+                <!-- Locate Us -->
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <h5 class="mb-3">Locate Us</h5>
+                    <p>123 Beauty Lane, Wellness City, BW 12345</p>
+                    <p>Email: info@beautyco.com</p>
+                    <p>Phone: +1 (123) 456-7890</p>
+                    <div class="map-placeholder bg-secondary rounded" style="height: 150px;">
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4964.919885320429!2d-0.09796669999999999!3d51.523123299999995!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48761b571c12e4eb%3A0x7146134e62c7b9a5!2sDevonshire%20House%2C%2060%20Goswell%20Rd.%2C%20London%2C%20UK!5e0!3m2!1sen!2sin!4v1753197398989!5m2!1sen!2sin"
+                            width="420" height="150" style="border:0;" allowfullscreen="" loading="lazy"
+                            referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+                </div>
+
+                <!-- Quick Links & Social Media -->
+                <div class="col-lg-4 col-md-12 mb-4">
+                    <div class="row">
+                        <div class="col-md-6 mb-4">
+                            <h5 class="mb-3">Quick Links</h5>
+                            <ul class="list-unstyled">
+                                <li><a href="#home" class="text-white text-decoration-none">Home</a></li>
+                                <li><a href="#product-categories" class="text-white text-decoration-none">Products</a>
+                                </li>
+                                <li><a href="#testimonials" class="text-white text-decoration-none">Reviews</a></li>
+                                <li><a href="#blogs" class="text-white text-decoration-none">Blogs</a></li>
+                                <li><a href="#contact" class="text-white text-decoration-none">Contact Us</a></li>
+                            </ul>
+                        </div>
+                        <div class="col-md-6 mb-4">
+                            <h5 class="mb-3">Follow Us</h5>
+                            <div class="d-flex social-icons">
+                                <a href="#" class="text-white me-3" aria-label="Facebook"><i data-lucide="facebook"
+                                        class="icon-md"></i></a>
+                                <a href="#" class="text-white me-3" aria-label="Instagram"><i data-lucide="instagram"
+                                        class="icon-md"></i></a>
+                                <a href="#" class="text-white me-3" aria-label="Twitter"><i data-lucide="twitter"
+                                        class="icon-md"></i></a>
+                                <a href="#" class="text-white" aria-label="LinkedIn"><i data-lucide="linkedin"
+                                        class="icon-md"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="text-center pt-4 border-top border-secondary mt-4">
+                <p>&copy; 2025 BeautyCo. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- jQuery (required for Owl Carousel) -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <!-- Bootstrap JS Bundle (Popper included) -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Owl Carousel JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <!-- Custom JS -->
+    <script src="task.js"></script>
+    <script>
+        // Initialize Lucide icons
+        lucide.createIcons();
+    </script>
+</body>
+
+</html>
